@@ -1,0 +1,1 @@
+#wordpress dossier wp-content
