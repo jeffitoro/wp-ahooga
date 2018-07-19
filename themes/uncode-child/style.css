@@ -7,3 +7,24 @@ Template: uncode
 Version: 1.0.0
 Text Domain: uncode
 */
+
+#bar-fixed-bottom{
+    position: fixed;
+    background: #000; 
+    bottom: 0px; 
+    color:#fff; 
+    font-family: Arial, Helvetica, sans-serif; 
+    width:100%; 
+    z-index:99999;
+    opacity: 0.95; 
+    font-weight: bold;
+}
+
+#bar-fixed-bottom>.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#bar-fixed-bottom>.row>.column-lg-4{
+    padding: 15px;
+}
