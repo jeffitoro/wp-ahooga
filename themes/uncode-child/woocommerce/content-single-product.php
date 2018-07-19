@@ -30,9 +30,10 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		echo uncode_get_row_template($the_content, ' limit-width', '', ot_get_option('_uncode_general_style'), '', 'quad', true, 'quad', 'style="max-width:801px; margin: auto"');
 	 	return;
 	 }
-
+	//Modif jeff
 	$_uncode_thumb_layout = ot_get_option('_uncode_product_image_layout');
 	$_uncode_thumb_layout = get_post_meta($post->ID, '_uncode_product_image_layout', 1) !== '' ? get_post_meta($post->ID, '_uncode_product_image_layout', 1) : $_uncode_thumb_layout;
+	$_uncode_thumb_layout = 'stack'; // i must content always stack
 
 	$sticky_col = ot_get_option('_uncode_product_sticky_desc');
 	$sticky_col = get_post_meta($post->ID, '_uncode_product_sticky_desc', 1) !== '' ? get_post_meta($post->ID, '_uncode_product_sticky_desc', 1) : $sticky_col;
@@ -41,9 +42,10 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	$col_size = ( get_post_meta($post->ID, '_uncode_product_media_size', 1) !== '' && get_post_meta($post->ID, '_uncode_product_media_size', 1) != 0 ) ? get_post_meta($post->ID, '_uncode_product_media_size', 1) : $col_size;
 
 	$col_class = $_uncode_thumb_layout === 'stack' && $sticky_col === 'on' ? ' sticky-element sticky-sidebar' : '';
-
+	$col_class = ' sticky-element sticky-sidebar';// i must content always ' sticky-element sticky-sidebar'
 ?>
 
+<!-- i changed order of elements for animation scroll and gallery images -->
 <div <?php function_exists('wc_product_class') ? wc_product_class() : post_class(); ?>>
 	<div class="row-container">
 		<div class="row row-parent col-std-gutter double-top-padding double-bottom-padding <?php echo esc_attr($limit_content_width); ?>" <?php echo $page_custom_width; ?>>
