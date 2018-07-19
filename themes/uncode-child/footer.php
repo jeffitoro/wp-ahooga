@@ -172,14 +172,6 @@ if (($footer_text_content !== '' || $footer_icons !== '')) {
 
 wp_footer(); ?>
 </body>
-<div class="fixedbar">
-	<div class="boxfloat">
-		<ul id="tips">
-			<li><a href="https://www.wpbeginner.com/">WPBeginner Link is the First Item</a></li>
-			<li><a href="http://www.wordpress.org/">WordPress.org is the Second Item</a></li>
-		</ul>
-	</div>
-</div>
 <div id="bar-fixed-bottom">
 	<div class="row">
 		<div class="column-lg-4">

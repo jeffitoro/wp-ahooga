@@ -28,3 +28,7 @@ Text Domain: uncode
 #bar-fixed-bottom>.row>.column-lg-4{
     padding: 15px;
 }
+
+.footer-scroll-top{
+    bottom: 12%;
+}
