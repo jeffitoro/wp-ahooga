@@ -10,3 +10,12 @@
         randomtip();
     });
 })( jQuery );
+
+jQuery(document).ready(function () {
+    var woocommerce = $("article").html();
+
+    // if i'm not in page woocommerce then action
+    if(woocommerce==null){
+        $("#bar-fixed-bottom").show();
+    }
+})

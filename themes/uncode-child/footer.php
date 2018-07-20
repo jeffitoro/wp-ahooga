@@ -172,10 +172,11 @@ if (($footer_text_content !== '' || $footer_icons !== '')) {
 
 wp_footer(); ?>
 </body>
-<div id="bar-fixed-bottom">
+<div id="bar-fixed-bottom" style="display:none">
 	<div class="row">
 		<div class="column-lg-4">
 			<h3>Description</h3>
+			<ul></ul>
 		</div>
 		<div class="column-lg-4">
 			<h3>Price Total</h3>
