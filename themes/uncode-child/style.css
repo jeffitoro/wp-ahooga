@@ -36,3 +36,26 @@ Text Domain: uncode
 footer .footer-last .add-class-footer{
     margin-bottom: 5%;
 }
+
+.form-champ{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulaire-champs{
+    background-color: red;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 12% 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}

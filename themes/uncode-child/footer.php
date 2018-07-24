@@ -176,13 +176,15 @@ wp_footer(); ?>
 	<div class="row">
 		<div class="column-lg-4">
 			<h3>Description</h3>
-			<ul></ul>
+			<ul id="description"></ul>
 		</div>
 		<div class="column-lg-4">
 			<h3>Price Total</h3>
+			<p id="total" style="text-align:center"></p>
 		</div>
 		<div class="column-lg-4">
 			<h3>Buy</h3>
+			<button class="button" id="btn-add">Add to cart</button>
 		</div>
 	</div>
 </div>
